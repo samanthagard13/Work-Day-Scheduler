@@ -4,7 +4,8 @@ body {
 }
 
 header {
-  background-color: #2798b2;
+  background-color: #59909c;
+  color: #e2e2e2;
 }
 
 .time-block {
@@ -15,7 +16,7 @@ textarea {
   background: transparent;
   border: none;
   resize: none;
-  color: #000000;
+  color: #282727;
   border-left: 1px solid black;
   padding: 10px;
 }
@@ -30,9 +31,10 @@ textarea {
 
 .hour {
   background-color: rgb(239, 239, 239);
-  color: #000000;
+  color: #1f1f1f;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
+  border-color: solid black
 }
 
 .past {
@@ -43,14 +45,14 @@ textarea {
 }
 
 .present {
-  background-color: #ed7b75;
+  background-color: #b67776;
   color: white;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
 }
 
 .future {
-  background-color: #7dcc7d;
+  background-color: #8dcb8d;
   color: white;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
@@ -60,7 +62,7 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #228ba2;
+  background-color: #40737f;
   color: white;
 }
 
