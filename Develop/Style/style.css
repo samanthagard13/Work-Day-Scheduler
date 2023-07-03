@@ -9,8 +9,12 @@ header {
   color: #e2e2e2;
 }
 
+#currentDay {
+  font-size: xx-large;
+}
+
 .time-block {
-  
+  margin: 5px;
 }
 
 textarea {

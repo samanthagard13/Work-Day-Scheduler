@@ -32,7 +32,7 @@ $(document).ready(function() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   saveBtn.on('click', function (event) {
-    let selectedHour = $(this).closest('time-block');
+    let selectedHour = $(this).closest('.time-block').attr('id');
     let savedEvent = $(this).siblings('.description').val();
 
     localStorage.setItem(selectedHour, savedEvent);
@@ -46,7 +46,7 @@ $('.time-block').each(function() {
   let blockHour = parseInt($(this).attr('id').split('-')[1]);
   if (blockHour === hour) {
     $(this).addClass('present');
-    $(this).css('border', 'rgb(0, 0, 0) 1px solid');
+    $(this).css('border', 'rgb(64, 64, 64) 1px solid');
   } else if (blockHour < hour) {
     $(this).addClass('past');
   } else {
