@@ -9,7 +9,7 @@ Select the hour you need to plan and type your event. CLick save and the event w
 
 https://samanthagard13.github.io/Work-Day-Scheduler/
 
-![Screenshot](./Develop/Images/Screenshot.png)
+![Screenshot](./Images/Screenshot.png)
 
 
 
