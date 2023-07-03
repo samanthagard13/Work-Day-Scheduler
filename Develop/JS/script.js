@@ -15,13 +15,13 @@ $(document).ready(function() {
     '#hour-10',
     '#hour-11',
     '#hourP-12',
-    '#hourP-1',
-    '#hourP-2',
-    '#hourP-3',
-    '#hourP-4',
-    '#hourP-5',
-    '#hourP-6',
-    '#hourP-7'
+    '#hourP-13',
+    '#hourP-14',
+    '#hourP-15',
+    '#hourP-16',
+    '#hourP-17',
+    '#hourP-18',
+    '#hourP-19'
   ];
   
 
@@ -32,8 +32,8 @@ $(document).ready(function() {
   // time-block containing the button that was clicked? How might the id be
   // useful when saving the description in local storage?
   saveBtn.on('click', function (event) {
-    let selectedHour = $(this).closest('.time-block').attr('class');
-    let savedEvent = $(this).siblings('#eventName').val();
+    let selectedHour = $(this).closest('time-block');
+    let savedEvent = $(this).siblings('.description').val();
 
     localStorage.setItem(selectedHour, savedEvent);
   });
@@ -43,11 +43,11 @@ $(document).ready(function() {
   // past, present, and future classes? How can Day.js be used to get the
   // current hour in 24-hour time?
 $('.time-block').each(function() {
-  let blockHour = parseInt($(hoursArray).attr('id').split('-')[1]);
+  let blockHour = parseInt($(this).attr('id').split('-')[1]);
   if (blockHour === hour) {
     $(this).addClass('present');
-    timeBlock.css('border', 'rgb(0, 0, 0) 2px solid');
-  } else if (blockhour < hour) {
+    $(this).css('border', 'rgb(0, 0, 0) 1px solid');
+  } else if (blockHour < hour) {
     $(this).addClass('past');
   } else {
     $(this).addClass('future');
@@ -59,7 +59,7 @@ $('.time-block').each(function() {
   //localStorage.getItem(savedEvent).display;
   var selectedHour = $(this).attr('id');
   var savedEvent = localStorage.getItem(selectedHour);
-  $(this).find(description).value(savedEvent);
+  $(this).find('.description').val(savedEvent);
 }); 
   // TODO: Add code to display the current date in the header of the page.
 
