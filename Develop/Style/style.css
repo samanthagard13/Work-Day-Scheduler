@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
+  margin-bottom: 50px;
 }
 
 header {
@@ -9,7 +10,7 @@ header {
 }
 
 .time-block {
-  border-radius: 15px;
+  
 }
 
 textarea {
@@ -17,12 +18,16 @@ textarea {
   border: none;
   resize: none;
   color: #282727;
-  border-left: 1px solid black;
+  
   padding: 10px;
 }
 
 .description {
   white-space: pre-wrap;
+}
+
+.description:hover {
+  border-color: 2px solid #282727;
 }
 
 .row {
@@ -34,7 +39,7 @@ textarea {
   color: #1f1f1f;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
-  border-color: solid black
+  
 }
 
 .past {
@@ -42,6 +47,8 @@ textarea {
   color: white;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .present {
@@ -49,6 +56,8 @@ textarea {
   color: white;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .future {
@@ -56,10 +65,12 @@ textarea {
   color: white;
   border-top-left-radius: 45px;
   border-bottom-left-radius: 45px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .saveBtn {
-  border-left: 1px solid black;
+  
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #40737f;
