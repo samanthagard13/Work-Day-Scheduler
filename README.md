@@ -1,3 +1,18 @@
+# Work Day Scheduler 
+
+## Description
+
+This website is a simple daily planner. Designed to save and display notes assigned to each hour of a possible work day. 
+
+## Usage
+Select the hour you need to plan and type your event. CLick save and the event will display even when the page refreshes.
+
+https://samanthagard13.github.io/Work-Day-Scheduler/
+
+![Screenshot](./Develop/Images/Screenshot.png)
+
+
+
 # 05 Third-Party APIs: Work Day Scheduler
 
 ## Your Task
